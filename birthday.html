@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Birthday Surprise!</title>
+
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #542044;
+      background: linear-gradient(135deg, #ffe0ec, #e5dcff);
+    }
+
+    .card {
+      width: min(85%, 480px);
+      padding: 36px 24px;
+      border-radius: 24px;
+      background: white;
+      box-shadow: 0 12px 35px #54204433;
+    }
+
+    h1 { font-size: 2.5rem; }
+
+    button {
+      padding: 14px 22px;
+      border: 0;
+      border-radius: 999px;
+      background: #e84393;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    #surprise {
+      display: none;
+      margin-top: 24px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .cake { font-size: 4rem; }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="cake">🎂</div>
+  <img src="C:\Users\USER\Downloads\nANDHUKIRSHNA" alt="Birthday photo" class="birthday-image">
+    <h1>Happy Birthday, Nandhu Krishna❤️!</h1>
+    <p>I made you a little surprise...</p>
+
+    <button onclick="showSurprise()">Open your surprise ✨</button>
+
+    <div id="surprise">
+      <p>🎉 Surprise! 🎉</p>
+      <p>
+        I hope your day is full of laughter, cake, and all your favorite things.
+        You make life brighter just by being you. 💖
+      </p>
+      <p>Here’s to an unforgettable year ahead! 🥳</p>
+     <p>By a Random Girl who always falls for you</p>
+    </div>
+  </main>
+
+  <script>
+    function showSurprise() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+</body>
+</html>
